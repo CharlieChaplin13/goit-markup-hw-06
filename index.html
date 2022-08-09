@@ -423,14 +423,17 @@
                 </ul>
             </div>
 
-            <div>
-                <h2 class="join-title">Подпишитесь на рассылку</h2>
-                <form action="">
-                    <input type="email" name="footer-email" placeholder="Email">
-                    <button>
+            <div class="submit-container">
+                <h2 class="join-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+                <form class="footer-form form">
+                    <div class="footer-form-field">
+                        <input type="email" class="footer-form-input" name="footer-email" id="footer-email">
+                        <label for="footer-email" class="footer-form-label">Email</label>
+                    </div>
+                    <button type="submit" class="footer-button">
                         Подписаться
-                        <svg>
-                            <use href="./images/icons.svg#sent-message"></use>
+                        <svg class="icon" widht="24px" height="24px">
+                            <use href="./images/icons.svg#send-message"></use>
                         </svg>
                     </button>
                 </form>
