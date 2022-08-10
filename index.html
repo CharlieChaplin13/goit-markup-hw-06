@@ -71,6 +71,21 @@
                                 <use href="./images/icons.svg#close-cross"></use>
                             </svg>
                         </button>
+
+                        <form action="">
+                            <div>
+                                <input type="name" name="name" id="name">
+                                <label for="name">Имя</label>
+                            </div>
+                            <div>
+                                <input type="tel" name="tel" id="tel">
+                                <label for="tel">Телефон</label>
+                            </div>
+                            <div>
+                                <input type="email" name="email" id="email">
+                                <label for="email">Почта</label>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 
@@ -425,18 +440,21 @@
 
             <div class="submit-container">
                 <h2 class="join-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-                <form class="footer-form form">
-                    <div class="footer-form-field">
-                        <input type="email" class="footer-form-input" name="footer-email" id="footer-email">
-                        <label for="footer-email" class="footer-form-label">Email</label>
-                    </div>
-                    <button type="submit" class="footer-button">
-                        Подписаться
-                        <svg class="icon" widht="24px" height="24px">
-                            <use href="./images/icons.svg#send-message"></use>
-                        </svg>
-                    </button>
-                </form>
+                <div>
+                    <form class="form">
+                        <div class="form-field">
+                            <input type="email" class="form-input" name="footer-email" id="footer-email" />
+                            <label for="footer-email" class="form-label">Email</label>
+                        </div>
+                        <button type="submit" class="footer-button">
+                            Подписаться
+                            <svg class="icon" widht="24px" height="24px">
+                                <use href="./images/icons.svg#send-message"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                
             </div>
             
         </div>
