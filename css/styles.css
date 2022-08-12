@@ -746,3 +746,12 @@ header {
     color: var(--button-hover-color);
 }
 
+.modal-title {
+    margin-bottom: 12px;
+    color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1,15;
+}
+
