@@ -871,4 +871,5 @@ header {
 
 .modal-check:checked + .check-text::before {
     border: none;
+    background-image: url(./images/check.svg);
 }
