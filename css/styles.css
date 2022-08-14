@@ -592,6 +592,31 @@ header {
     transform: translateY(-50%);
 }
 
+.footer-button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    border: transparent;
+    border-radius: 4px;
+    margin-left: 12px;
+    padding: 10px 28px;
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+    background-color: var(--button-hover-color);
+}
+
+
 /* Стили для портфолио */
 
 /* Кнопки фильтра */
@@ -772,13 +797,13 @@ header {
 
 .close-button:hover, 
 .close-button:focus {
-    border-color: var(--button-hover-color);
     color: var(--button-hover-color);
 }
 
 .modal-form {
     display: block;
     text-align: justify;
+    margin-bottom: 20px;
 }
 
 .modal-title {
@@ -857,12 +882,52 @@ header {
 
 .check-text {
     display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
-.check-text::before {
-    content: '';
+.check-text span {
     width: 16px;
     height: 15px;
+    margin-right: 7px;
+    border: 1px solid var(--logo-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-icon {
+    fill: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-check:checked + .check-text span {
+    background-color: #2196F3;
+    border: none;
+}
+
+.modal-check:hover + .check-text span,
+.modal-check:focus + .check-text span {
+    border-color: var(--accent-color);
+}
+
+.modal-check:checked + .check-text .check-icon {
+    fill: var(--primary-bg-color);
+}
+
+/* .check-text::before {
+    content: '';
+    width: 16px;
+    height: 15px;background-position: center;
+    margin-right: 7px;
     border: 1px solid var(--logo-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -870,6 +935,51 @@ header {
 }
 
 .modal-check:checked + .check-text::before {
+    background-color: #2196F3;
     border: none;
-    background-image: url(./images/check.svg);
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    
+} */
+
+.agreement-button {
+    background-color: transparent;
+    border: transparent;
+    text-decoration: underline;
+    color: var(--accent-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+}
+
+.agreement-button:hover,
+.agreement-button:focus {
+    color: var(--button-hover-color);
+}
+
+.submit-button {
+    padding: 10px 52px;
+    min-width: 200px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.submit-button:hover, 
+.submit-button:focus {
+    background-color: var(--button-hover-color);
 }
