@@ -475,6 +475,7 @@ header {
 
 .footer-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer .logo {
@@ -562,8 +563,14 @@ header {
     fill: var(--secondary-text-color);
 }
 
+.submit-container {
+    margin-top: 12px;
+    margin-left: 93px;
+}
+
 .footer-form {
     display: flex;
+    justify-content:space-between
 }
 
 .footer-form-field {
@@ -571,7 +578,7 @@ header {
 }
 
 .footer-form-input {
-    width: 100%;
+    width: 358px;
     height: 50px;
     background-color: transparent;
     border: 1 solid rgba(255, 255, 255, 0.3);
