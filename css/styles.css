@@ -71,9 +71,6 @@ img {
     color: var(--secondary-text-color);
     border-color: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
     font-weight: 700;
     font-size: 16px;
@@ -274,6 +271,9 @@ header {
 .hero-button {
     padding: 10px 32px;
     min-width: 200px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Особенности */
@@ -595,6 +595,10 @@ header {
     font-size: 16px;
     line-height: 1,25;
     letter-spacing: 0.03em;
+
+    transition-property: border-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-input:hover,
@@ -905,7 +909,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: border-color;
+    transition-property: border-color, background-color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -914,6 +918,9 @@ header {
     fill: transparent;
     background-repeat: no-repeat;
     background-position: center;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-check:checked + .check-text span {
@@ -958,7 +965,9 @@ header {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .agreement-button:hover,
@@ -968,5 +977,8 @@ header {
 
 .submit-button {
     padding: 10px 52px; 
-    min-width: 200px; 
+    min-width: 200px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
