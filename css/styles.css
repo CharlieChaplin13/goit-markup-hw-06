@@ -768,6 +768,7 @@ header {
     padding: 40px;
 
     width: 528px;
+    height: 581px;
     border-radius: 4px;
 
     background-color: var(--primary-bg-color); 
@@ -779,6 +780,9 @@ header {
     position: absolute;
     top: 8px;
     right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     width: 30px;
     height: 30px;
@@ -883,6 +887,7 @@ header {
 .modal-text:focus {
     color: var(--logo-text-color);
 }
+
 
 .checkbox-group {
     margin-bottom: 30px;
