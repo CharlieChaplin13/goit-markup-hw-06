@@ -616,6 +616,10 @@ header {
     width: 200px;
 }
 
+.footer-button-icon {
+    margin-left: 10px;
+}
+
 /* Стили для портфолио */
 
 /* Кнопки фильтра */
