@@ -732,7 +732,7 @@ img {
   }
 
   @media screen and (min-width: 1158px) {
-    padding-inline: 15px;
+    padding-inline: 16px;
     align-items: baseline;
     gap: 0;
   }
