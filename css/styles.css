@@ -757,6 +757,7 @@ img {
   }
 
   @media screen and (min-width: 1158px) {
+    justify-content: space-between;
     padding-inline: 15px;
     align-items: baseline;
     gap: 0;
@@ -807,7 +808,7 @@ img {
 
 .footer-social-text {
   display: block;
-  justify-self: center;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
