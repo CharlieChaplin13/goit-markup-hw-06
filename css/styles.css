@@ -282,6 +282,10 @@ img {
 .header-menu-open {
   background-color: transparent;
   border: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .header-menu-open-icon {
@@ -380,10 +384,6 @@ img {
   border: none;
   min-width: 169px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
 }
 
 .hero-button:hover,
@@ -771,7 +771,7 @@ img {
 }
 
 .footer-logo {
-  display: flex;
+  display: block;
   justify-self: center;
   text-align: center;
   color: var(--cloud);
@@ -803,6 +803,7 @@ img {
 }
 
 .footer-social-text {
+  display: block;
   justify-self: center;
   font-weight: 500;
   font-size: 16px;
