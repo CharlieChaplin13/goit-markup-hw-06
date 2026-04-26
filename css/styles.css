@@ -422,11 +422,14 @@ img {
   @media screen and (min-width: 768px) {
     gap: 72px 24px;
   }
+
+  @media screen and (min-width: 1158px) {
+    gap: 0 24px;
+  }
 }
 
 .features-item {
   width: 100%;
-  max-width: 288px;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 24px) / 2);
@@ -754,7 +757,7 @@ img {
   }
 
   @media screen and (min-width: 1158px) {
-    padding-inline: 16px;
+    padding-inline: 15px;
     align-items: baseline;
     gap: 0;
   }
@@ -1051,7 +1054,8 @@ img {
 }
 
 .menu-contacts-link:hover,
-.menu-contacts-link:focus {
+.menu-contacts-link:focus,
+.menu-contacts-link:current {
   color: var(--iris);
 }
 
